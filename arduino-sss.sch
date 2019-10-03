@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:arduino-sss-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -477,25 +477,14 @@ F 3 "" H 10300 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:DB9_Male J3
-U 1 1 5C3D621D
-P 2350 4650
-F 0 "J3" H 2270 3958 50  0000 C CNN
-F 1 "DB9_Male" H 2270 4049 50  0000 C CNN
-F 2 "Connector_Dsub:DSUB-9_Male_Horizontal_P2.77x2.54mm_EdgePinOffset9.40mm" H 2350 4650 50  0001 C CNN
-F 3 " ~" H 2350 4650 50  0001 C CNN
-	1    2350 4650
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:GNDD #PWR0110
 U 1 1 5C3D8C39
-P 2650 5200
-F 0 "#PWR0110" H 2650 4950 50  0001 C CNN
-F 1 "GNDD" H 2654 5045 50  0000 C CNN
-F 2 "" H 2650 5200 50  0001 C CNN
-F 3 "" H 2650 5200 50  0001 C CNN
-	1    2650 5200
+P 2650 5300
+F 0 "#PWR0110" H 2650 5050 50  0001 C CNN
+F 1 "GNDD" H 2654 5145 50  0000 C CNN
+F 2 "" H 2650 5300 50  0001 C CNN
+F 3 "" H 2650 5300 50  0001 C CNN
+	1    2650 5300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -509,8 +498,6 @@ F 3 "http://www.nxp.com/documents/data_sheet/1N4148_1N4448.pdf" H 3100 4650 50  
 	1    3100 4650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2650 5050 2650 5200
 $Comp
 L Connector:Conn_01x03_Male J1
 U 1 1 5C3DCE8B
@@ -1245,4 +1232,27 @@ F 3 "~" H 3250 4800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 3250 4650
+NoConn ~ 2650 4250
+NoConn ~ 2650 4350
+NoConn ~ 2650 4550
+NoConn ~ 2650 4750
+NoConn ~ 2650 4950
+$Comp
+L Connector:DB9_Female_MountingHoles J3
+U 1 1 5C3D621D
+P 2350 4650
+F 0 "J3" H 2500 5400 50  0000 C CNN
+F 1 "DB9_Female_MountingHoles" H 2350 5250 50  0000 C CNN
+F 2 "Connector_Dsub:DSUB-9_Female_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 2350 4650 50  0001 C CNN
+F 3 " ~" H 2350 4650 50  0001 C CNN
+	1    2350 4650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 5050 2650 5250
+Wire Wire Line
+	2350 5250 2650 5250
+Connection ~ 2650 5250
+Wire Wire Line
+	2650 5250 2650 5300
 $EndSCHEMATC
