@@ -1,4 +1,4 @@
-update=2019/10/3 星期四 21:38:11
+update=2019/10/4 星期五 17:49:31
 version=1
 last_client=kicad
 [cvpcb]
@@ -66,7 +66,7 @@ SolderMaskMinWidth=0.25
 SolderPasteClearance=0
 SolderPasteRatio=-0
 [pcbnew/Layer.F.Cu]
-Name=F.Comp
+Name=F.Cu
 Type=0
 Enabled=1
 [pcbnew/Layer.In1.Cu]
@@ -208,9 +208,9 @@ Enabled=1
 [pcbnew/Layer.B.Mask]
 Enabled=1
 [pcbnew/Layer.F.Mask]
-Enabled=0
-[pcbnew/Layer.Dwgs.User]
 Enabled=1
+[pcbnew/Layer.Dwgs.User]
+Enabled=0
 [pcbnew/Layer.Cmts.User]
 Enabled=0
 [pcbnew/Layer.Eco1.User]
